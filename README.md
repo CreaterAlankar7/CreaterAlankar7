@@ -1,66 +1,38 @@
-<!-- HEADER BANNER -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=200&section=header&text=Alankar%20Sharma&fontSize=48&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Android%20%7C%20IoT%20%7C%20Cybersecurity&descAlignY=58&descSize=18" width="100%"/>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alankar Sharma | Android, IoT & Security</title>
+<meta name="description" content="Portfolio of Alankar Sharma: Android apps, IoT automation and ethical hacking.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#10142b; --panel:#1a2048; --line:#2b3366; --paper:#eef0ff; --muted:#a3a9d6;
+  --stop:#ff5d73; --calm:#7ee0c3;
+  --font:"Bricolage Grotesque",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--ink);color:var(--paper);font:400 1.05rem/1.65 var(--font);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--calm);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
 
-<!-- TYPING ANIMATION -->
-<p align="center">
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=00D4FF&center=true&vCenter=true&width=600&lines=Android+Developer+(Kotlin);IoT+%26+Automation+Builder;Learning+Ethical+Hacking;Building+things+that+solve+real+problems" alt="Typing SVG" />
-  </a>
-</p>
+/* nav */
+nav{position:sticky;top:0;z-index:5;background:rgba(16,20,43,.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;height:60px}
+nav b{font-weight:800;letter-spacing:-.01em}
+nav ul{display:flex;gap:22px;list-style:none;padding:0}
+nav a{text-decoration:none;color:var(--muted);transition:color .2s}
+nav a:hover{color:var(--paper)}
 
----
-
-## 👨‍💻 About Me
-
-I build Android apps and IoT automation projects, and I'm learning ethical hacking.
-I like turning everyday annoyances into working software.
-
-## 🛠 Tech Stack
-
-<p>
-  <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
-  <img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white"/>
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white"/>
-</p>
-
-## 🚀 Featured Projects
-
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>📵 Doomstop</h3>
-      <p>Android app (Kotlin) that blocks Instagram Reels after a time or scroll limit.</p>
-      <a href="https://github.com/CreaterAlankar7/Doomstop">View Project →</a>
-    </td>
-    <td width="50%" valign="top">
-      <h3>🔧 Project 2</h3>
-      <p>One-line description of your second project.</p>
-      <a href="#">View Project →</a>
-    </td>
-  </tr>
-</table>
-
-## 🎯 Currently
-
-- 🔨 Building Android apps with Kotlin
-- 🔐 Learning ethical hacking
-- 🌐 Working on IoT automation
-
-## 🐍 Contribution Snake
-
-<!-- Needs a GitHub Action, setup below -->
-<img src="https://raw.githubusercontent.com/CreaterAlankar7/CreaterAlankar7/output/github-snake-dark.svg" width="100%"/>
-
-## 📫 Connect With Me
-
-<p align="center">
-  <a href="https://linkedin.com/in/your-link"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
-  <a href="mailto:your-email@example.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/></a>
-</p>
-
-<!-- FOOTER -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:2c5364,100:0f2027&height=100&section=footer" width="100%"/>
+/* hero */
+.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:center;padding:84px 0 70px}
+h1{font-size:clamp(2.6rem,7vw,4.9rem);line-height:1;font-weight:800;letter-spacing:-.035em}
+.role{margin-top:18px;font-size:1.35rem;color:var(--calm);min-height:2em;font-weight:600}
+.caret{display:inline-block;width:3px;height:1.1em;background:var(--calm);margin-left:3px;vertical-align:-.18em;animation:blink 1s steps(1) infinite}
+.lead{margin-top:14px;color:var(--muted);max-width:46ch}
+.cta{display:flex;gap:12px;margin-top:28px;flex-wrap:wrap}
